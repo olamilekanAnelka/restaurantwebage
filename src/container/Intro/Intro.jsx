@@ -16,9 +16,7 @@ const Intro = () => {
       vidRef.current.play();
     }
 
-        /*
-    setPlayVideo(true)
-    setPlayVideo(flase)*/
+      
   };
 
   return (

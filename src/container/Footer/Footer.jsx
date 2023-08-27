@@ -5,11 +5,15 @@ import { FiFacebook, FiTwitter, FiInstagram} from 'react-icons/fi'
 import './Footer.css';
 import { images } from '../../constants';
 
+
+{/**the footer component */}
 const Footer = () => (
   <div className='app__footer section__padding'>
+
+    {/**the newsletter part,*/}
     <FooterOverlay />
     <Newsletter />
-
+     {/**the footer part */}
     <div className='app__footer-links'>
       <div className='app__footer-links_contact'>
            <h1 className='app__footer-headtext'>Contact Us</h1>

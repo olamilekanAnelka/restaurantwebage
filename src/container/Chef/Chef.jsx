@@ -4,12 +4,19 @@ import {images } from '../../constants'
 import { SubHeading } from '../../components';
 import './Chef.css';
 
+
+
+{/**the chef component  */}
 const Chef = () => (
   <div className='app__bg app__wrapper section__padding'>
+
+    {/**the image part of the component  */}
     <div className='app__wrapper_img app__wrapper_img-reverse'>
       <img src={images.chef} alt='chef' />
     </div>
+  
 
+  {/**the second div the chef's word part */}
     <div className='app__wrapper_info'>
        <SubHeading title="chef's word"/>
        <h1 className='headtext__cormorant'>what we believe in</h1>

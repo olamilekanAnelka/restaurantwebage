@@ -3,8 +3,13 @@ import React from 'react';
 import { SubHeading} from '../../components';
 import { images } from '../../constants';
 
+
+
+ {/**findus component */}
 const FindUs = () => (
   <div className='app__bg app__wrapper section__padding' id='contact'>
+
+    {/**the first part of the component  */}
     <div className='app__wrapper_info'>
        <SubHeading title="Contact" />
         <h1 className='headtext__cormorant' style={{marginBottom: '3rem'}}>Find US </h1>
@@ -24,7 +29,9 @@ const FindUs = () => (
         </div>
         <button className='custom__button' style={{marginTop: '2rem'}}>Visit Us</button>
     </div>
+ 
 
+    {/** the img part */}
     <div className="app__wrapper_img">
       <img src={images.findus} alt='findus' />
     </div>

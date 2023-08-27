@@ -8,7 +8,7 @@ import './Gallery.css';
 const galleryImgs = [images.gallery01, images.gallery02, images.gallery03, images.gallery04]
 
 const Gallery = () => {
-
+ /* functionality of the arrow*/
   const scrollRef = React.useRef(null);
 
   const scroll= (direction) => {
@@ -20,9 +20,15 @@ const Gallery = () => {
       current.scrollLeft  += 300;
     }
   }
+  
 
+  {/**the gallery component  */}
   return(
+
+    
   <div className='app__gallery flex__center'>
+
+    {/** the gallery content the first part  */}
     <div className='app__gallery-content'>
      <SubHeading title="instagram" />
      <h1 className='headtext__cormorant'> Photo Gallery </h1>
@@ -33,6 +39,7 @@ const Gallery = () => {
      <button type='button' className='custom__button'>View More</button>
     </div>
 
+    {/**the carousel paet  */}
     <div className='app__gallery-images'>
       <div className='app__gallery-images_container' ref={scrollRef}>
          {galleryImgs.map((images, index) => (
@@ -43,6 +50,7 @@ const Gallery = () => {
          ))}
       </div>
     
+    {/**the arrow on the caroesel */}
     <div className='app__gallery-images_arrows'>
       <BsArrowLeftShort className='gallery__arrow-icon' onClick={ () => scroll('left')} />
       <BsArrowRightShort className='gallery__arrow-icon' onClick={ () => scroll('right')} />

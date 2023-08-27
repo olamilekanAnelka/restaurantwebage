@@ -2,14 +2,17 @@ import React from 'react';
 
 import './MenuItem.css';
 
+
+{/**the meniitem is used on specialmenu component */}
 const MenuItem = ( {title, price, tags} ) => (
-  <div className='app__menuitem'>
+ 
+ <div className='app__menuitem'>
     <div className='app__menuitem-head'> 
     <div className='app__menuitem-name'>
       <p className='p__cormorant' style={ { color: '#DCCA87'}}>{title}</p>
     </div>
     
-
+     {/**the golden line between the heading and the price  */}
     <div className='app__menuitem-dash' />
 
     <div className='app__menuitem-price'>

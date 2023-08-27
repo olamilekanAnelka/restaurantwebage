@@ -4,7 +4,7 @@ import { SubHeading} from '../../components';
 import { images, data } from '../../constants';
 import './Laurels.css';
 
-
+  /* this is the award imgs this is maped from*/
   const AwardCard = ({ award: {imgUrl, title, subtitle}}) => (
     <div className='app__laurels_awards-card'>
       <img src={imgUrl} alt="award" />
@@ -15,8 +15,11 @@ import './Laurels.css';
     </div>
   )
 
+
+  {/** the laurel component */}
 const Laurels = () => (
   <div className='app__bg app__wrapper section__padding' id='awaeds'>
+    {/**the first part of the laurel component */}
     <div className='app__wrapper_info'>
        <SubHeading title="Awards & Recongnition"/>
        <h1 className='headtext__cormorant'>Our Laurels</h1>
@@ -25,6 +28,8 @@ const Laurels = () => (
          {data.awards.map((award) => <AwardCard award={award} key={award.title} />)}
        </div>
     </div>
+
+    {/**the second part of the laurel component */}
     <div className='app__wrapper_img'>
     <img src={images.laurels} alt='laurels' />
     </div>

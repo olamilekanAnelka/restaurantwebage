@@ -1,3 +1,4 @@
+/**the aboutus styling*/
 .app__aboutus {
     position: relative;
 }
@@ -52,6 +53,8 @@
   color: var(--color-gray);
 }
 
+
+/* big screen styling */
 @media screen and (max-width: 2000px) {
   .app__aboutus-content_knife img{
     height: 1110px;
@@ -63,6 +66,8 @@
 }
 
 }
+
+/* medium screen styling */
 @media screen and (max-width: 900px) {
     .app__aboutus-content{
         flex-direction: column;
@@ -72,6 +77,8 @@
 
     }
 }
+
+/* small screen styling */
 @media screen and (max-width: 650px) {
     .app__aboutus-overlay img{
         width: 80%;
